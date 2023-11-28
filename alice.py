@@ -29,7 +29,7 @@ for i in df.columns:
     df[i] = pd.to_numeric(df[i], errors='coerce')                       # type object -> type float
 
 df = df.fillna(0)                           # NaN -> 0
-
+df = df[df['SiO2'] > 0]                     # on ne garde que les verres silicatés
 print(df.head(5))
 
 liste_tous_composants = [ ' SiO2', ' B2O3', ' Al2O3', ' MgO', ' CaO', ' BaO', ' Li2O', ' Na2O', ' K2O', ' Cu2O', ' Rb2O', ' Ag2O', ' Cs2O', ' Tl2O', ' BeO', ' MnO', ' FeO', ' CoO', ' NiO', ' CuO', ' ZnO', ' SrO', ' CdO', ' PbO', ' HgO', ' SnO', ' Cr2O3', ' Fe2O3', ' Ga2O3', ' As2O3', ' Y2O3', ' In2O3', ' Sb2O3', ' La2O3', ' Nd2O3', ' Gd2O3', ' Bi2O3', ' Co2O3', ' Sc2O3', ' Co3O4',
