@@ -75,10 +75,33 @@ def tri_fusion(liste):
 df.drop_duplicates(keep='first', inplace=True)                         # Les duplicatas parfaits
 df.drop_duplicates(subset=Liste_tous_composants, keep=False, inplace=True)       # Les compos identiques
 
-# selection d'oxydes
+# selection d'oxydes premier tour
 Liste_oxyde_proportion = []
 n = len(df)
 for x in Liste_tous_composants:
+    Liste_oxyde_proportion.append( (x, df[x][df[x] > 0.001].count()/n) )
+print(tri_fusion(Liste_oxyde_proportion))
+
+def coupe_liste_triee(L, proportion_apparition_minimum):
+    Oxydes_gardes = []
+    Oxydes_sortis = []
+    for i in range(len(L)):
+        if L[i][1] < proportion_apparition_minimum:
+            Oxydes_gardes = L[:i]
+            Oxydes_sortis = L[i:]
+            return Oxydes_gardes, Oxydes_sortis
+    return L, []
+
+Oxydes_gardes,Oxydes_sortis = coupe_liste_triee(tri_fusion(Liste_oxyde_proportion), 0.0000001)
+
+for (x,i) in Oxydes_sortis:
+    df.drop(x, axis = 1, inplace=True)
+
+
+# selection d'oxydes second tour
+Liste_oxyde_proportion = []
+n = len(df)
+for (x,i) in Oxydes_gardes:
     Liste_oxyde_proportion.append( (x, df[x][df[x] > 0.001].count()/n) )
 print(tri_fusion(Liste_oxyde_proportion))
 
@@ -97,6 +120,8 @@ Oxydes_sortis = coupe_liste_triee(tri_fusion(Liste_oxyde_proportion), 0.0000001)
 for (x,i) in Oxydes_sortis:
     df.drop(x, axis = 1, inplace=True)
 
+
+
 #liste d'oxydes de Raviner 2020 pour comparaison
 # SiO2, B2O3, Al2O3, MgO, CaO, BaO, Li2O,
 # Na2O, K2O, Ag2O, Cs2O, Tl2O, BeO, NiO, CuO, ZnO, CdO, PbO,
@@ -108,3 +133,7 @@ df['sum_check'] = (df['Sum'] > 98) & (df['Sum'] <= 100)
 df = df.loc[df['sum_check'] == True]
 
 df.head()
+
+
+
+
