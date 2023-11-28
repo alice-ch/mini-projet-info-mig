@@ -15,3 +15,14 @@ df_composants = df[liste_composants]
 df['Sum'] = df_composants.sum(axis=1)                       # Crée une nouvelle colonne pour connaitre la somme des % de composition
 
 print(df.head(5))
+
+# selection d'oxydes
+L = []
+n = len(df)
+for x in df.columns[0]:
+    L.append( (x, df[x][df[x] > 0.1].count()/n) )
+
+
+
+
+
