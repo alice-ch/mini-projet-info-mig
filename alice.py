@@ -129,7 +129,7 @@ for (x,i) in Oxydes_sortis:
 # Nb2O5, Ta2O5, MoO3, WO3, H2O, Sm2O3, MgF2, PbF2, PbCl2
 
 #On crée une colonne 'Somme'
-df_composants = df[liste_composants]
+df_composants = df[[nom[0] for nom in Oxydes_gardes]]
 df['Sum'] = df_composants.sum(axis=1)       # Crée une nouvelle colonne pour connaitre la somme des % de composition
 
 df['sum_check'] = (df['Sum'] > 98) & (df['Sum'] <= 100)      # On ne garde que les 100% composition
