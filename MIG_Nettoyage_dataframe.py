@@ -3,10 +3,10 @@ from math import *
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('D:/Users/Valentin/Desktop/1A Mines/Semestre 1/UE15 - MIG/mini-projet-info-mig/Dataframe_test.csv', index_col='No.')
+df = pd.read_csv('D:/Users/Valentin/Desktop/1A Mines/Semestre 1/UE15 - MIG/mini-projet-info-mig/Dataframe_test.csv')
 
 # On vire les colonnes pas utiles
-liste_col_a_enlever = [' Glass No.', ' Data Source', ' Year', ' Data Source Number']
+liste_col_a_enlever = ['No.', ' Glass No.', ' Data Source', ' Year', ' Data Source Number']
 liste_composants = [' SiO2', ' B2O3', ' Al2O3', ' CaO', ' Na2O']
 
 df.drop(liste_col_a_enlever, axis = 1, inplace=True)        # Enlève les colonnes inutiles
@@ -99,4 +99,3 @@ for (x,i) in Oxydes_sortis[]
 df['sum_check'] = np.where(98 < df['sum'] < 100, True, False)
 
 df.drop(df[df['sum_check']==False].index, inplace=True)
-
