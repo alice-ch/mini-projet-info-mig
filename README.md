@@ -3,24 +3,11 @@
 o : fait 
 x : à faire
 
-On importer la dataframe :
-On fusionner les dataframes en faisant attention à la numérotation et à rajouter les colonnes manquantes :
-On virer les colonnes bizarres :
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-
-On garde les colones : 
-    - de compo :
-    - de module d'Young (lequel ?) :
-    -
-    .
-    .
-    .
+On importer la dataframe : o
+On fusionner les dataframes en faisant attention à la numérotation et à rajouter les colonnes manquantes : o
+On virer les colonnes bizarres : 
+    - on garde que les données à température ambiante
+    - et la compo
 
 On "normalise" la dataframe : 
     Nan -> 0 : o
