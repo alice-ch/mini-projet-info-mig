@@ -1,24 +1,28 @@
 import pandas as pd
 import numpy as np
-from math import *
 
 df = pd.read_csv("C:/Users/raphael.poux/Mig verre/Interglad_propre.csv")
 
 # On garde que les verres
 
 df = df[df['Glass No.'].str.contains('G')]
+df.drop(['Organic Compound', 'Others', 'O'], axis = 1, inplace = True)
 
-# On vire les colonnes pas utiles
-liste_col_a_enlever = [' Unnamed: 0', ' No.', ' Glass No.', ' Data Source', ' Year', ' Data Source Number', ' Thermal Treatment',
-                       ' Bulk Density ( g/cm3 )', ' Density (Miscell) ( g/cm3 )',  " Young's Modulus (Miscell) ( GPa )", " Young's Modulus at <0C ( GPa )",
-                       ' Vickers Hardness 50g ( MPa )', ' Vickers Hardness (Typical) ( MPa )', ' Vickers Hardness 200g ( MPa )', ' Vickers Hardness 500g ( MPa )', ' Vickers Hardness (Miscell) ( MPa )',
-                       ' H', ' Li', ' B', ' C', ' N', ' O', ' F', ' Na', ' Mg', ' Al', ' Si', ' P', ' S', ' Cl', ' K', ' Ca', ' Sc', ' Ti', ' V', ' Cr', ' Mn', ' Fe', ' Co', ' Ni', ' Cu', ' Zn', ' Ga', ' Ge', ' As', ' Se', ' Br', ' Rb', ' Y', ' Zr', ' Nb', ' Mo', ' Pd', ' Ag', ' Cd', ' In', ' Sn', ' Sb', ' Te', ' I', ' Ba', ' La', ' Ce', ' Gd', ' W', ' Re', ' Pt', ' Au', ' Hg', ' Tl', ' Pb', ' Bi', ' Th', ' U',
-                       ]
 
-liste_enlever = [ elem[1:] for elem in liste_col_a_enlever]
+Liste_tous_composants = []
+for colonne in df.columns:
+    if "O" in colonne:
+        Liste_tous_composants.append(colonne)
 
-df.drop(liste_enlever, axis = 1, inplace=True)        # Enlève les colonnes inutiles
+Colonnes_gardées = Liste_tous_composants[:]
+Colonnes_gardées.append('Vickers Hardness 100g ( MPa )')
+Colonnes_gardées.append("Young's Modulus at RT ( GPa )")
+Colonnes_gardées.append('Density at RT ( g/cm3 )')
+Colonnes_gardées.append('Fracture Toughness ( MPa.m1/2 )')
 
+#print(Colonnes_gardées)
+
+df = df[Colonnes_gardées]
 
 # On convertit tout en float
 df = df.replace(' *', np.nan)               # * -> NaN
@@ -30,16 +34,8 @@ for i in df.columns:
 
 df = df.fillna(0)                           # NaN -> 0
 df = df[df['SiO2'] > 0]                     # on ne garde que les verres silicatés
-print(df.head(5))
 
-Liste_tous_composants = []
-for colonne in df.columns:
-    if "O" in colonne:
-        Liste_tous_composants.append(colonne)
 
-Liste_tous_composants.remove('O')
-Liste_tous_composants.remove('Organic Compound')
-Liste_tous_composants.remove('Others')
 
 # On drop les duplicatas
 
@@ -59,6 +55,30 @@ def Ox_garde_Gr(df, r):
     return [ (elem, D[elem]/len(df)*100) for elem in D.sort_values(ascending = False).index if D[elem]/len(df)*100 > r]
 
 
+def supp(df, p):
+    oxydes_sortis = [ elem[0] for elem in Ox_garde_Gp(df, p)[1]]
+    oxydes_gardes = [ elem[0] for elem in Ox_garde_Gp(df, p)[0]]
+    print(oxydes_gardes)
+    for x in oxydes_sortis:
+      df.drop(x, axis = 1, inplace=True)
+    df_composants = df[oxydes_gardes]
+    df['Sum'] = df_composants.sum(axis=1)
+    df = df[(df['Sum'] > 98) & (df['Sum'] <= 100)]
+    return df[oxydes_gardes]
+
+def supr(df, p):
+    oxydes_sortis = [ elem[0] for elem in Ox_garde_Gr(df, p)[1]]
+    oxydes_gardes = [ elem[0] for elem in Ox_garde_Gr(df, p)[0]]
+    for x in oxydes_sortis:
+      df.drop(x, axis = 1, inplace=True)
+    df_composants = df[[nom[0] for nom in oxydes_gardes]]
+    df['Sum'] = df_composants.sum(axis=1)
+    df = df[(df['Sum'] > 98) & (df['Sum'] <= 100)]
+    return df[oxydes_gardes]
+
+def Gp2(df, p):
+    D = supp(df, p).mean().sort_values( ascending = False)
+    return [ (elem, D[elem]) for elem in D.index if D[elem] > p]
 
 #liste d'oxydes de Raviner 2020 pour comparaison
 # SiO2, B2O3, Al2O3, MgO, CaO, BaO, Li2O,
