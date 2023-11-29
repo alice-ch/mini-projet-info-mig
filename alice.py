@@ -108,12 +108,11 @@ dfT = df.loc[df['Fracture Toughness_check ( MPa.m1/2 )'] == True]
 
 # On écrit les dataframes dans des fichiers
 
-dfT[oxgard].to_csv('compoT.csv', sep = ' ')
-dfT["Fracture Toughness ( MPa.m1/2 )"].to_csv('T.csv', sep = ' ')
-dfD[oxgard].to_csv('CompoD.csv', sep = ' ')
-dfD["Density at RT ( g/cm3 )"].to_csv('D.csv', sep = ' ')
-dfV[oxgard].to_csv('CompoV.csv', sep = ' ')
-dfV["Vickers Hardness 100g ( MPa )"].to_csv('V.csv', sep = ' ')
-dfY[oxgard].to_csv('CompoY.csv', sep = ' ')
-dfY["Young's Modulus at RT ( GPa )"].to_csv('Y.csv', sep = ' ')
-
+dfT[oxgard].to_csv('compoT.csv', sep = ' ', index=False)
+dfT["Fracture Toughness ( MPa.m1/2 )"].to_csv('T.csv', sep = ' ', index=False)
+dfD[oxgard].to_csv('CompoD.csv', sep = ' ', index=False)
+dfD["Density at RT ( g/cm3 )"].to_csv('D.csv', sep = ' ', index=False)
+dfV[oxgard].to_csv('CompoV.csv', sep = ' ', index=False)
+dfV["Vickers Hardness 100g ( MPa )"].to_csv('V.csv', sep = ' ', index=False)
+dfY[oxgard].to_csv('CompoY.csv', sep = ' ', index=False)
+dfY["Young's Modulus at RT ( GPa )"].to_csv('Y.csv', sep = ' ', index=False)
