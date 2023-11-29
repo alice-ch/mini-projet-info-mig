@@ -32,13 +32,14 @@ df = df.fillna(0)                           # NaN -> 0
 df = df[df['SiO2'] > 0]                     # on ne garde que les verres silicatés
 print(df.head(5))
 
-liste_tous_composants = [ ' SiO2', ' B2O3', ' Al2O3', ' MgO', ' CaO', ' BaO', ' Li2O', ' Na2O', ' K2O', ' Cu2O', ' Rb2O', ' Ag2O', ' Cs2O', ' Tl2O', ' BeO', ' MnO', ' FeO', ' CoO', ' NiO', ' CuO', ' ZnO', ' SrO', ' CdO', ' PbO', ' HgO', ' SnO', ' Cr2O3', ' Fe2O3', ' Ga2O3', ' As2O3', ' Y2O3', ' In2O3', ' Sb2O3', ' La2O3', ' Nd2O3', ' Gd2O3', ' Bi2O3', ' Co2O3', ' Sc2O3', ' Co3O4',
-                          ' Sb2O5', ' Ce2O3', ' As2O5', ' TiO2', ' MnO2', ' CoO2', ' GeO2', ' ZrO2', ' CeO2', ' SnO2', ' TeO2', ' P2O5', ' V2O5', ' Nb2O5', ' Ta2O5', ' V2O4', ' Mo2O5', ' HfO2', ' SO3', ' MoO3', ' WO3', ' SO2', ' GeS2', ' H2O', ' OH', ' NH3', ' N2O5', ' Sm2O3', ' Eu2O3', ' Tb2O3', ' Dy2O3', ' Ho2O3', ' Er2O3', ' Tm2O3', ' Yb2O3', ' Lu2O3', ' Pr2O3', ' Pr6O11', ' PrO2',
-                          ' ThO2', ' U2O3', ' UO2', ' U3O8', ' Ti2O3', ' R2O', ' RO', ' R2O3', ' RO2', ' RO3', ' RE2O3', ' LiF', ' NaF', ' KF', ' RbF', ' CsF', ' TlF', ' BeF2', ' MgF2', ' CaF2', ' SrF2', ' BaF2', ' MnF2', ' CuF2', ' ZnF2', ' CdF2', ' SnF2', ' PbF2', ' ScF3', ' YF3',
-                          ' CrF3', ' AlF3', ' GaF3', ' InF3', ' LaF3', ' NdF3', ' GdF3', ' YbF3', ' LuF3', ' TiF4', ' ZrF4', ' HfF4', ' ThF4', ' VF3', ' KHF2', ' DyF3', ' HoF3', ' CoF2', ' FeF3', ' VF4', ' NiF2', ' UF4', ' TbF3', ' EuF3', ' LiCl', ' NaCl', ' MgCl2', ' CaCl2', ' SrCl2', ' BaCl2', ' CuCl2', ' ZnCl2', ' PbCl2', ' AgCl', ' VCl3', ' LiBr', ' NaBr', ' CsBr', ' CdBr2', ' PbBr2', ' AgBr', ' NaI', ' CsI', ' SrI2', ' PbI2', ' AgI', ' PF5', ' TmF3', ' ErF3', ' PrF3', ' P2S5',
-                          ' Mn3O4', ' Fe3O4', ' SeO2', ' RuO2', ' CdS', ' Li2S', ' ZnS', ' ZnSe', ' Ni2O3', ' CdSe', ' CdTe', ' R2O5', ' BiF3', ' CeF3', ' SiF4', ' SmF3', ' KCl', ' RbCl', ' CsCl', ' CdCl2', ' SnCl2', ' BiCl3', ' ThCl4', ' CuCl', ' PrCl3', ' KBr', ' RbBr', ' MgBr2', ' SrBr2', ' BaBr2', ' CuI', ' NbF5', ' Na2S', ' Rb2S', ' Sr', ' Cs', ' Pr', ' Nd', ' Sm', ' Eu', ' Tb', ' Dy', ' Ho', ' Er', ' Tm', ' Yb', ' Lu', ' D', ' Ca(PO3)2', ' CaSO4', ' K2CO3', ' K2CrO7', ' Mg(PO3)2', ' Na4P2O7', ' Zn(PO3)2', ' AlPO4', ' AgNO3', ' Li2O-Al2O3-4SiO2', ' Na2B4O7-10H2O', ' NaHPO4-12H2O', ' Li2SO4', ' La(PO3)3', ' BaTiO3', ' BPO4', ' Sr3(PO4)2', ' CaHPO4-2H2O', ' Na2SiF6', ' Ag2Se', ' Ga2S3', ' La2S3', ' GeSe3', ' K2S', ' ZrS2', ' Sb2Se3', ' ZrO2-SiO2', ' 2MgO-2Al2O3-5SiO2', ' 2Al2O3-SiO2', ' TiO', ' CaO-SiO2', ' Na2B4O7', ' GaAs', ' Pb3O4', ' V2O3', ' Nb2O3', ' UO3', ' Tb4O7', ' MnCl2', ' AlCl3', ' ErCl3', ' TeCl4', ' WCl6', ' TlBr', ' CaBr2', ' ZnBr2', ' LiI', ' KI', ' RbI', ' TlI', ' ZnI2', ' CdI2', ' BiI3', ' SiS2', ' PbO2', ' Be', ' Ru', ' Rh', ' Hf', ' Ta', ' PbGeO3', ' Li3PO4', ' Ag2SO4', ' In(PO3)3', ' K2B4O7', ' Sr(PO3)2', ' BaCO3', ' Li2CO3', ' H3BO3', ' Zn3(PO4)2', ' AgPO3', ' Li2B4O7', ' PbSO4', ' BaS', ' Nd2S3', ' Sb2S3', ' Ga2Se3', ' B2S3', ' Cs2S', ' Tm2S3', ' GeS', ' Er2S3', ' In2S3', ' PdO', ' Mn2O3', ' CrO3', ' EuO', ' MoO2', ' Rh2O3', ' NdCl3', ' CeBr3', ' GdBr3', ' HgI2', ' CoCl2', ' Na2Se', ' Ir', ' Lr', ' Li3BO3', ' Kaolin', ' Al(OH)3', ' BaSO4', ' H3PO4', ' MgCO3', ' SrCO3', ' K2O-Al2O3-6SiO2', ' Bi2S3', ' Tl2S', ' Cu2Se', ' SnS']
+Liste_tous_composants = []
+for colonne in df.columns:
+    if "O" in colonne:
+        Liste_tous_composants.append(colonne)
 
-Liste_tous_composants = [ elem[1:] for elem in liste_tous_composants]
+Liste_tous_composants.remove('O')
+Liste_tous_composants.remove('Organic Compound')
+Liste_tous_composants.remove('Others')
 
 # tri de la liste pour avoir une liste de couples (oxydes, pourcentages de présence) avec un pourcentage de présence décroissant
 
