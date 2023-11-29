@@ -50,19 +50,13 @@ df.drop_duplicates(subset=Liste_tous_composants, keep=False, inplace=True)      
 
 def Ox_garde_Gp(df, p):
     D = df[Liste_tous_composants].mean().sort_values( ascending = False)
-    D.head()
-    return ([ (elem, D[elem]) for elem in D.index if D[elem] > p], [ (elem, D[elem]) for elem in D.index if D[elem] <= p])
+    return ([ (elem, D[elem]) for elem in D.index if D[elem] > p] , [ (elem, D[elem]) for elem in D.index if D[elem] <= p])
 
 def Ox_garde_Gr(df, r):
+    D = df[Liste_tous_composants].mean()
     for elem in Liste_tous_composants:
         D[elem] = df[elem][df[elem] > 0].count()
-    return [ (elem, D[elem]/len(df)*100) for elem in D.sort_values(ascending = False).index if D[elem]/len(df)*100 > r])
-
-def suppression(ox_gardé, df):
-  for (x,i) in Oxydes_sortis:
-    df.drop(x, axis = 1, inplace=True)
-
-Oxydes_gardé = Ox_garde_Gp(suppression(Ox_garde_Gp(df, p)[1], df), p)
+    return [ (elem, D[elem]/len(df)*100) for elem in D.sort_values(ascending = False).index if D[elem]/len(df)*100 > r]
 
 
 
