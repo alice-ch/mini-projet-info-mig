@@ -51,7 +51,7 @@ df.drop_duplicates(subset=Liste_tous_composants, keep=False, inplace=True)      
 def Ox_garde_Gp(df, p):
     D = df[Liste_tous_composants].mean().sort_values( ascending = False)
     D.head()
-    return ([ (elem, D[elem]) for elem in D.index if D[elem] > p], [ (elem, D[elem]) for elem in D.index if D[elem] =< p])
+    return ([ (elem, D[elem]) for elem in D.index if D[elem] > p], [ (elem, D[elem]) for elem in D.index if D[elem] <= p])
 
 def Ox_garde_Gr(df, r):
     for elem in Liste_tous_composants:
