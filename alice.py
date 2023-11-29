@@ -92,7 +92,7 @@ def coupe_liste_triee(L, proportion_apparition_minimum):
             return Oxydes_gardes, Oxydes_sortis
     return L, []
 
-Oxydes_gardes,Oxydes_sortis = coupe_liste_triee(tri_fusion(Liste_oxyde_proportion), 0.0000001)
+Oxydes_gardes,Oxydes_sortis = coupe_liste_triee(tri_fusion(Liste_oxyde_proportion), 0.01)
 
 for (x,i) in Oxydes_sortis:
     df.drop(x, axis = 1, inplace=True)
@@ -115,7 +115,7 @@ def coupe_liste_triee(L, proportion_apparition_minimum):
             return Oxydes_gardes, Oxydes_sortis
     return L, []
 
-Oxydes_sortis = coupe_liste_triee(tri_fusion(Liste_oxyde_proportion), 0.0000001)[1]
+Oxydes_sortis = coupe_liste_triee(tri_fusion(Liste_oxyde_proportion), 0.01)[1]
 
 for (x,i) in Oxydes_sortis:
     df.drop(x, axis = 1, inplace=True)
