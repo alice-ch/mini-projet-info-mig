@@ -36,7 +36,6 @@ df = df.fillna(0)                           # NaN -> 0
 df = df[df['SiO2'] > 0]                     # on ne garde que les verres silicatés
 
 
-
 # On drop les duplicatas
 
 df.drop_duplicates(keep='first', inplace=True)                         # Les duplicatas parfaits
@@ -85,13 +84,6 @@ def Gp2(df, p):
 # Na2O, K2O, Ag2O, Cs2O, Tl2O, BeO, NiO, CuO, ZnO, CdO, PbO,
 # Ga2O3, Y2O3, La2O3, Gd2O3, Bi2O3, TiO2, ZrO2, TeO2, P2O5, V2O5,
 # Nb2O5, Ta2O5, MoO3, WO3, H2O, Sm2O3, MgF2, PbF2, PbCl2
-
-#On crée une colonne 'Somme'
-df_composants = df[[nom[0] for nom in Oxydes_gardes]]
-df['Sum'] = df_composants.sum(axis=1)       # Crée une nouvelle colonne pour connaitre la somme des % de composition
-
-df['sum_check'] = (df['Sum'] > 98) & (df['Sum'] <= 100)      # On ne garde que les 100% composition
-df = df.loc[df['sum_check'] == True]
 
 def garde_Young(df, inf, sup):
     """
