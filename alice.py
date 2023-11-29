@@ -135,6 +135,13 @@ df['Sum'] = df_composants.sum(axis=1)       # Crée une nouvelle colonne pour co
 df['sum_check'] = (df['Sum'] > 98) & (df['Sum'] <= 100)      # On ne garde que les 100% composition
 df = df.loc[df['sum_check'] == True]
 
+def garde_Young(df):
+    """
+    Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
+    """
+    df['Young_check'] = (df["Young's modulus"] > 50) & (df["Young's modulus"] <= 130)
+    df = df.loc[df['Young_check'] == True]
+
 df.head()
 
 
