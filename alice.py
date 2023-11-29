@@ -11,7 +11,7 @@ df = df[df['Glass No.'].str.contains('G')]
 # On vire les colonnes pas utiles
 liste_col_a_enlever = [' Unnamed: 0', ' No.', ' Glass No.', ' Data Source', ' Year', ' Data Source Number', ' Thermal Treatment',
                        ' Bulk Density ( g/cm3 )', ' Density (Miscell) ( g/cm3 )',  " Young's Modulus (Miscell) ( GPa )", " Young's Modulus at <0C ( GPa )",
-                       ' Vickers Hardness 50g ( MPa )', ' Vickers Hardness 100g ( MPa )', ' Vickers Hardness 200g ( MPa )', ' Vickers Hardness 500g ( MPa )', ' Vickers Hardness (Miscell) ( MPa )',
+                       ' Vickers Hardness 50g ( MPa )', ' Vickers Hardness (Typical) ( MPa )', ' Vickers Hardness 200g ( MPa )', ' Vickers Hardness 500g ( MPa )', ' Vickers Hardness (Miscell) ( MPa )',
                        ' H', ' Li', ' B', ' C', ' N', ' O', ' F', ' Na', ' Mg', ' Al', ' Si', ' P', ' S', ' Cl', ' K', ' Ca', ' Sc', ' Ti', ' V', ' Cr', ' Mn', ' Fe', ' Co', ' Ni', ' Cu', ' Zn', ' Ga', ' Ge', ' As', ' Se', ' Br', ' Rb', ' Y', ' Zr', ' Nb', ' Mo', ' Pd', ' Ag', ' Cd', ' In', ' Sn', ' Sb', ' Te', ' I', ' Ba', ' La', ' Ce', ' Gd', ' W', ' Re', ' Pt', ' Au', ' Hg', ' Tl', ' Pb', ' Bi', ' Th', ' U',
                        ]
 
@@ -135,12 +135,37 @@ df['Sum'] = df_composants.sum(axis=1)       # Crée une nouvelle colonne pour co
 df['sum_check'] = (df['Sum'] > 98) & (df['Sum'] <= 100)      # On ne garde que les 100% composition
 df = df.loc[df['sum_check'] == True]
 
-def garde_Young(df):
+def garde_Young(df, inf, sup):
     """
     Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
+    On peut choisir 50 et 130 pour les bornes
     """
-    df['Young_check at RT ( GPa )'] = (df["Young's modulus at RT ( GPa )"] > 50) & (df["Young's modulus at RT ( GPa )"] <= 130)
+    df['Young_check at RT ( GPa )'] = (df["Young's modulus at RT ( GPa )"] > inf) & (df["Young's modulus at RT ( GPa )"] <= sup)
     df = df.loc[df['Young_check at RT ( GPa )'] == True]
+
+def garde_Vickers(df, inf, sup):
+    """
+    Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
+    On peut choisir 3000 et 7500 pour les bornes
+    """
+    df['Vickers Hardness 100g_check ( MPa )'] = (df["Vickers Hardness 100g ( MPa )"] > inf) & (df["Vickers Hardness 100g ( MPa )"] <= sup)
+    df = df.loc[df['Vickers Hardness 100g_check ( MPa )'] == True]
+
+def garde_densite(df, inf, sup):
+    """
+    Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
+    On peut choisir 2 et 4 pour les bornes
+    """
+    df['Density at RT_check ( g/cm3 )'] = (df["Density at RT ( g/cm3 )"] > inf) & (df["Density at RT ( g/cm3 )"] <= sup)
+    df = df.loc[df['Density at RT_check ( g/cm3 )  '] == True]
+
+def garde_toughness(df, inf, sup):
+    """
+    Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
+    On peut choisir 0.5 et 1.5 pour les bornes
+    """
+    df['Fracture Toughness_check ( MPa.m1/2 )'] = (df["Fracture Toughness ( MPa.m1/2 )"] > inf) & (df["Fracture Toughness ( MPa.m1/2 )"] <= sup)
+    df = df.loc[df['Fracture Toughness_check ( MPa.m1/2 )'] == True]
 
 df.head()
 
