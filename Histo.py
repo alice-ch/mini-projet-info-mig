@@ -40,23 +40,23 @@ def garde_toughness(df, inf, sup):
 def Vickers(df, inf, sup, bin):
   df = garde_Vickers(df, inf, sup).loc[df["Vickers Hardness (Typical) ( MPa )"] != 0]
   print(len(df))
-  hist = df.hist(column="Vickers Hardness (Typical) ( MPa )", bins = bin)
+  hist = df.hist(column='Vickers Hardness 100g_check ( MPa )', bins = bin)
   plt.show()
 
 def Young(df, inf, sup, bin):
   df = garde_Young(df, inf, sup).loc[df["Young's Modulus at RT ( GPa )"] != 0]
   print(len(df))
-  hist = df.hist(column="Young's Modulus at RT ( GPa )", bins = bin)
+  hist = df.hist(column='Young_check at RT ( GPa )', bins = bin)
   plt.show()
 
 def Toughness(df, inf, sup, bin):
   df = df.loc[df["Fracture Toughness ( MPa.m1/2 )"] != 0]
   print(len(df))
-  hist = df.hist(column="Fracture Toughness ( MPa.m1/2 )", bins = 30)
+  hist = df.hist(column='Fracture Toughness_check ( MPa.m1/2 )', bins = 30)
   plt.show()
 
 def Density(df, inf, sup, bin):
   df = garde_densite(df, inf, sup).loc[df["Density at RT ( g/cm3 )"] != 0]
   print(len(df))
-  hist = df.hist(column="Density at RT ( g/cm3 )", bins = 30)
+  hist = df.hist(column='Density at RT_check ( g/cm3 )', bins = 30)
   plt.show()
