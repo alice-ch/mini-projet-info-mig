@@ -95,7 +95,7 @@ def garde_densite(df, inf, sup):
     On peut choisir 2 et 4 pour les bornes
     """
     df['Density at RT_check ( g/cm3 )'] = (df["Density at RT ( g/cm3 )"] > inf) & (df["Density at RT ( g/cm3 )"] <= sup)
-    df = df.loc[df['Density at RT_check ( g/cm3 )  '] == True]
+    df = df.loc[df['Density at RT_check ( g/cm3 )'] == True]
 
 def garde_toughness(df, inf, sup):
     """
