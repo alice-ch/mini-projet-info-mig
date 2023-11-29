@@ -36,6 +36,7 @@ df = df.fillna(0)                           # NaN -> 0
 df = df[df['SiO2'] > 0]                     # on ne garde que les verres silicatés
 
 
+
 # On drop les duplicatas
 
 df.drop_duplicates(keep='first', inplace=True)                         # Les duplicatas parfaits
@@ -57,7 +58,6 @@ def Ox_garde_Gr(df, r):
 def supp(df, p):
     oxydes_sortis = [ elem[0] for elem in Ox_garde_Gp(df, p)[1]]
     oxydes_gardes = [ elem[0] for elem in Ox_garde_Gp(df, p)[0]]
-    print(oxydes_gardes)
     for x in oxydes_sortis:
       df.drop(x, axis = 1, inplace=True)
     df_composants = df[oxydes_gardes]
@@ -77,48 +77,42 @@ def supr(df, p):
 
 def Gp2(df, p):
     D = supp(df, p).mean().sort_values( ascending = False)
-    return [ (elem, D[elem]) for elem in D.index if D[elem] > p]
+    return [ elem for elem in D.index if D[elem] > p]
 
-#liste d'oxydes de Raviner 2020 pour comparaison
-# SiO2, B2O3, Al2O3, MgO, CaO, BaO, Li2O,
-# Na2O, K2O, Ag2O, Cs2O, Tl2O, BeO, NiO, CuO, ZnO, CdO, PbO,
-# Ga2O3, Y2O3, La2O3, Gd2O3, Bi2O3, TiO2, ZrO2, TeO2, P2O5, V2O5,
-# Nb2O5, Ta2O5, MoO3, WO3, H2O, Sm2O3, MgF2, PbF2, PbCl2
-
-def garde_Young(df, inf, sup):
-    """
-    Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
-    On peut choisir 50 et 130 pour les bornes
-    """
-    df['Young_check at RT ( GPa )'] = (df["Young's modulus at RT ( GPa )"] > inf) & (df["Young's modulus at RT ( GPa )"] <= sup)
-    df = df.loc[df['Young_check at RT ( GPa )'] == True]
-
-def garde_Vickers(df, inf, sup):
-    """
-    Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
-    On peut choisir 3000 et 7500 pour les bornes
-    """
-    df['Vickers Hardness 100g_check ( MPa )'] = (df["Vickers Hardness 100g ( MPa )"] > inf) & (df["Vickers Hardness 100g ( MPa )"] <= sup)
-    df = df.loc[df['Vickers Hardness 100g_check ( MPa )'] == True]
-
-def garde_densite(df, inf, sup):
-    """
-    Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
-    On peut choisir 2 et 4 pour les bornes
-    """
-    df['Density at RT_check ( g/cm3 )'] = (df["Density at RT ( g/cm3 )"] > inf) & (df["Density at RT ( g/cm3 )"] <= sup)
-    df = df.loc[df['Density at RT_check ( g/cm3 )'] == True]
-
-def garde_toughness(df, inf, sup):
-    """
-    Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
-    On peut choisir 0.5 et 1.5 pour les bornes
-    """
-    df['Fracture Toughness_check ( MPa.m1/2 )'] = (df["Fracture Toughness ( MPa.m1/2 )"] > inf) & (df["Fracture Toughness ( MPa.m1/2 )"] <= sup)
-    df = df.loc[df['Fracture Toughness_check ( MPa.m1/2 )'] == True]
-
-df.head()
+print("i")
 
 
+oxgard = Gp2(df, p)
+cogardees = oxgard[:]
+cogardees.append('Vickers Hardness 100g ( MPa )')
+cogardees.append("Young's Modulus at RT ( GPa )")
+cogardees.append('Density at RT ( g/cm3 )')
+cogardees.append('Fracture Toughness ( MPa.m1/2 )')
+print("i")
 
+
+df = df[cogardees]
+
+df['Vickers Hardness 100g_check ( MPa )'] = (df["Vickers Hardness 100g ( MPa )"] > 3000) & (df["Vickers Hardness 100g ( MPa )"] <= 7500)
+dfV = df.loc[df['Vickers Hardness 100g_check ( MPa )'] == True]
+
+df['Young_check at RT ( GPa )'] = (df["Young's Modulus at RT ( GPa )"] > 50) & (df["Young's Modulus at RT ( GPa )"] <= 130)
+dfY = df.loc[df['Young_check at RT ( GPa )'] == True]
+
+df['Density at RT_check ( g/cm3 )'] = (df["Density at RT ( g/cm3 )"] > 2) & (df["Density at RT ( g/cm3 )"] <= 4)
+dfD = df.loc[df['Density at RT_check ( g/cm3 )'] == True]
+
+df['Fracture Toughness_check ( MPa.m1/2 )'] = (df["Fracture Toughness ( MPa.m1/2 )"] > 0.5) & (df["Fracture Toughness ( MPa.m1/2 )"] <= 1.5)
+dfT = df.loc[df['Fracture Toughness_check ( MPa.m1/2 )'] == True]
+
+print("i")
+
+dfT[oxgard].to_csv('compoT.csv', sep = ' ')
+dfT["Fracture Toughness ( MPa.m1/2 )"].to_csv('T.csv', sep = ' ')
+dfD[oxgard].to_csv('CompoD.csv', sep = ' ')
+dfD["Density at RT ( g/cm3 )"].to_csv('D.csv', sep = ' ')
+dfV[oxgard].to_csv('CompoV.csv', sep = ' ')
+dfV["Vickers Hardness 100g ( MPa )"].to_csv('V.csv', sep = ' ')
+dfY[oxgard].to_csv('CompoY.csv', sep = ' ')
+dfY["Young's Modulus at RT ( GPa )"].to_csv('Y.csv', sep = ' ')
 
