@@ -139,8 +139,8 @@ def garde_Young(df):
     """
     Méthode qui supprime les lignes où le module d'Young à temp. ambiante n'est pas renseigné
     """
-    df['Young_check'] = (df["Young's modulus"] > 50) & (df["Young's modulus"] <= 130)
-    df = df.loc[df['Young_check'] == True]
+    df['Young_check at RT ( GPa )'] = (df["Young's modulus at RT ( GPa )"] > 50) & (df["Young's modulus at RT ( GPa )"] <= 130)
+    df = df.loc[df['Young_check at RT ( GPa )'] == True]
 
 df.head()
 
