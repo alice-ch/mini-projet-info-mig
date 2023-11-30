@@ -91,6 +91,8 @@ cogardees.append("Young's Modulus at RT ( GPa )")
 cogardees.append('Density at RT ( g/cm3 )')
 cogardees.append('Fracture Toughness ( MPa.m1/2 )')
 
+# 32 786 verres
+
 # On fait le tri des valeurs aberrantes
 
 df = df[cogardees]
