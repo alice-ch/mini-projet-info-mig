@@ -38,10 +38,10 @@ for colonne in colonnes:
     if not colonne in df4.columns:
         df4[colonne] = pd.Series(0)
         
-df1.to_csv('Interglad.csv', sep = ',')
-df2.to_csv('Interglad.csv', sep = ',', mode = 'a')
-df3.to_csv('Interglad.csv', sep = ',', mode = 'a')
-df4.to_csv('Interglad.csv', sep = ',', mode = 'a')
+df1.to_csv('Interglad.csv', sep = ',',index = False)
+df2.to_csv('Interglad.csv', sep = ',', mode = 'a',index = False)
+df3.to_csv('Interglad.csv', sep = ',', mode = 'a',index = False)
+df4.to_csv('Interglad.csv', sep = ',', mode = 'a',index = False)
 
 df = pd.read_csv("Interglad.csv")
 colomns = {}
