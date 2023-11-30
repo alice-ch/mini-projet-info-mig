@@ -1,3 +1,4 @@
+
 import pandas as pd
 
 df1 = pd.read_csv("C:/Users/raphael.poux/Mig Verre/100000.csv",header = 28)
@@ -54,8 +55,13 @@ for i in df.columns:
 
 df = df.rename(columns = colomns)
 
-for i in range(len(df)):
+'''
+for i in range(5,60000):
     if df['SiO2'].iloc[i] == ' SiO2':
-        df.drop(i, inplace=True)
+ '''
+       
+df.drop([25343,47698,80098], inplace=True)
+        
 
-df.to_csv('Interglad_propre.csv', sep = ',')
+
+df.to_csv('Interglad_propre_test.csv', sep = ',',index=False)
