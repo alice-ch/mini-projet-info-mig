@@ -35,12 +35,16 @@ for i in df.columns:
 df = df.fillna(0)                           # NaN -> 0
 df = df[df['SiO2'] > 0]                     # on ne garde que les verres silicatés
 
+# 52 489 verres  
+
 
 
 # On drop les duplicatas
 
 df.drop_duplicates(keep='first', inplace=True)                         # Les duplicatas parfaits
+# 36 956 verres  
 df.drop_duplicates(subset=Liste_tous_composants, keep=False, inplace=True)       # Les compos identiques
+# 32 786 verres  
 
 # selection d'oxydes dont la composition moyenne dans les oxydes est supérieure à p
 
@@ -113,9 +117,13 @@ dfT = df.loc[df['Fracture Toughness_check ( MPa.m1/2 )'] == True]
 
 dfT[oxgard].to_csv('compoT.csv', sep = ' ', index=False)
 dfT["Fracture Toughness ( MPa.m1/2 )"].to_csv('T.csv', sep = ' ', index=False)
+#  66 verres
 dfD[oxgard].to_csv('CompoD.csv', sep = ' ', index=False)
 dfD["Density at RT ( g/cm3 )"].to_csv('D.csv', sep = ' ', index=False)
+#  5 715 verres
 dfV[oxgard].to_csv('CompoV.csv', sep = ' ', index=False)
 dfV["Vickers Hardness 100g ( MPa )"].to_csv('V.csv', sep = ' ', index=False)
+#  112 verres
 dfY[oxgard].to_csv('CompoY.csv', sep = ' ', index=False)
 dfY["Young's Modulus at RT ( GPa )"].to_csv('Y.csv', sep = ' ', index=False)
+#  649 verres
