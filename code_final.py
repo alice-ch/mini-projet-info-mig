@@ -6,6 +6,7 @@ df = pd.read_csv("C:/Users/raphael.poux/Mig verre/Interglad_propre.csv")
 # On garde que les verres
 
 df = df[df['Glass No.'].str.contains('G')]
+# 94 103 verres  
 df.drop(['Organic Compound', 'Others', 'O'], axis = 1, inplace = True)
 
 # On établit une liste des composants à laquelle on ajoute les propriétés physiques pour créer la liste des colonnes conservées
