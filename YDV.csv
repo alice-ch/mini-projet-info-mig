@@ -1,0 +1,393 @@
+Search Condition
+State,Not Specified
+Composition
+,Component Unit,mol%
+Component,Main,,Component,,,,min,max
+,Total of Main Components >=,0,%
+Commercial Glass,
+Glass System,
+Filler,
+Crystal,
+Substrate,
+Shape,
+Usage,
+Property
+,Property,,,,Unit,min,max
+,Density at RT,,,,Common,,
+AND,Vickers Hardness 100g,,,,Common,,
+AND,Young's Modulus at RT,,,,Common,,
+Structure
+,Structure,Element,Unit,min,max
+Data Source
+,Data Source,Year,,Number,Cat No,Pat Co
+Glass ID,,
+Max Data,1000
+
+List Condition
+,Component Unit,mol%
+,Property Unit,Common
+
+No., Glass No., Data Source, Year, Data Source Number, Density at RT ( g/cm3 ), Young's Modulus at RT ( GPa ), Vickers Hardness 100g ( MPa )
+1, GJ20-039845, J. Ceramic Soc. Japan, 1983, v. 091  p. 0086, 2.435, 52.57, 3273.0
+2, GJ20-039846, J. Ceramic Soc. Japan, 1983, v. 091  p. 0086, 2.664, 55.33, 3489.0
+3, GJ20-039847, J. Ceramic Soc. Japan, 1983, v. 091  p. 0086, 3.173, 50.17, 3009.0
+4, GJ20-039848, J. Ceramic Soc. Japan, 1983, v. 091  p. 0086, 3.651, 43.23, 2705.0
+5, GJ20-039849, J. Ceramic Soc. Japan, 1983, v. 091  p. 0086, 2.895, 42.16, 2323.0
+6, GJ20-039850, J. Ceramic Soc. Japan, 1983, v. 091  p. 0086, 2.432, 49.51, 2323.0
+7, GJ20-039851, J. Ceramic Soc. Japan, 1983, v. 091  p. 0086, 2.51, 35.9, 1735.0
+8, GJ03-046439, J. Non-Crystalline Solids, 1983, v. 056  p. 0147, 2.931, 135.4, 8820.0
+9, GJ03-046440, J. Non-Crystalline Solids, 1983, v. 056  p. 0147, 2.829, 129.9, 8575.0
+10, GJ03-046441, J. Non-Crystalline Solids, 1983, v. 056  p. 0147, 2.873, 118.6, 6860.0
+11, GJ03-046442, J. Non-Crystalline Solids, 1983, v. 056  p. 0147, 2.835, 115.2, 6272.0
+12, GJ03-046443, J. Non-Crystalline Solids, 1983, v. 056  p. 0147, 2.805, 111.4, 6076.0
+13, GJ03-046444, J. Non-Crystalline Solids, 1983, v. 056  p. 0147, 2.783, 102.2, 5488.0
+14, GJ03-046445, J. Non-Crystalline Solids, 1983, v. 056  p. 0147, 2.786, 105.7, 5488.0
+15, XB01-089877, Glass Hand Book (J), 1975, v. 001  p. 0204, 2.5, 78.4, 7448.0
+16, XB02-089878, Glass Hand Book (J), 1975, v. 001  p. 0204, 2.5, 78.4, 7987.0
+17, GB05-089879, Glass Hand Book (J), 1975, v. 001  p. 0204, 2.2, 65.66, 5586.0
+18, GB02-089880, Glass Hand Book (J), 1975, v. 001  p. 0204, 2.5, 68.6, 5292.0
+19, CP02-101910, Japanese Patent, 1989, A201043, 2.57, 98.0, 6566.0
+20, MP06-102176, Japanese Patent, 1989, A239036, 2.57, 98.0, 6566.0
+21, GI10-152478R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 4.425, 120.8, 6575.8
+22, GI06-190608R, NGF's Additional New Data (J), 2000, v. 002  p. 0001, 2.64, 77.66, 5507.6
+23, GI06-190613R, NGF's Additional New Data (J), 2000, v. 002  p. 0001, 2.6, 77.98, 5752.6
+24, GI02-190618R, NGF's Additional New Data (J), 2000, v. 002  p. 0001, 2.54, 73.02, 5370.4
+25, GI06-190631R, NGF's Additional New Data (J), 2000, v. 002  p. 0001, 2.56, 84.27, 5899.6
+26, GI02-190644R, NGF's Additional New Data (J), 2000, v. 002  p. 0003, 2.34, 74.88, 5047.0
+27, GI02-190648R, NGF's Additional New Data (J), 2000, v. 002  p. 0003, 2.6, 71.49, 5233.2
+28, GI03-190654R, NGF's Additional New Data (J), 2000, v. 002  p. 0003, 2.57, 85.04, 5889.8
+29, GI05-190659R, NGF's Additional New Data (J), 2000, v. 002  p. 0003, 2.25, 62.12, 5233.2
+30, GI05-190663R, NGF's Additional New Data (J), 2000, v. 002  p. 0003, 2.35, 66.63, 5066.6
+31, GI05-190680R, NGF's Additional New Data (J), 2000, v. 002  p. 0005, 2.56, 77.33, 5380.2
+32, GI03-190703R, NGF's Additional New Data (J), 2000, v. 002  p. 0005, 2.82, 83.07, 5350.8
+33, GI03-190713R, NGF's Additional New Data (J), 2000, v. 002  p. 0005, 2.72, 77.07, 4978.4
+34, GI03-190714R, NGF's Additional New Data (J), 2000, v. 002  p. 0005, 2.69, 74.11, 4625.6
+35, GI03-190715R, NGF's Additional New Data (J), 2000, v. 002  p. 0005, 2.69, 75.53, 4557.0
+36, GI03-190716R, NGF's Additional New Data (J), 2000, v. 002  p. 0005, 2.67, 74.46, 4949.0
+37, GI06-190747R, NGF's Additional New Data (J), 2000, v. 002  p. 0007, 2.56, 82.0, 5517.4
+38, GI06-191642R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.39, 82.4, 5733.0
+39, GI06-191644, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.39, 82.7, 5527.2
+40, GI06-191645R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.46, 88.6, 6977.6
+41, GI06-191649R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.49, 69.1, 5664.4
+42, GI06-191650R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.48, 77.4, 6399.4
+43, GI06-191654R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.47, 59.9, 5674.2
+44, GI06-191656R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.51, 82.7, 6458.2
+45, GI06-191657R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.57, 80.6, 6615.0
+46, GI06-191658R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 3.0, 75.6, 6301.4
+47, GI06-191659R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.72, 79.7, 5929.0
+48, GI06-191660R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.79, 78.9, 6634.6
+49, GI06-191661R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.55, 86.3, 5831.0
+50, GI06-191662R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.63, 83.9, 7007.0
+51, GI06-191663R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 3.2, 76.7, 6350.4
+52, GI06-191664R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.85, 82.4, 5987.8
+53, GI06-191665R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.93, 81.2, 6370.0
+54, GI06-191666R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.5, 80.6, 6448.4
+55, GI06-191667R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.55, 79.4, 6634.6
+56, GI06-191668R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.98, 74.5, 6556.2
+57, GI06-191669R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.7, 79.1, 5762.4
+58, GI06-191670, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.78, 77.9, 7026.6
+59, GI06-191671R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.54, 84.3, 6742.4
+60, GI06-191672R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.61, 81.9, 7046.2
+61, GI06-191673R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 3.17, 75.3, 6517.0
+62, GI06-191674R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.82, 80.9, 6085.8
+63, GI06-191675R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.9, 79.0, 6419.0
+64, GI06-191676, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.46, 82.8, 5252.8
+65, GI06-191678, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.41, 83.1, 5213.6
+66, GI06-191679, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.52, 83.1, 5007.8
+67, GI06-191680, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.48, 83.1, 5125.4
+68, GI06-191682, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.35, 73.3, 4615.8
+69, GI06-191684, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.59, 82.9, 5007.8
+70, GI06-191686, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.45, 78.8, 5047.0
+71, GI06-191687R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.43, 81.9, 5194.0
+72, GI06-191688R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.55, 80.2, 5194.0
+73, GI06-191689R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.48, 81.4, 5154.8
+74, GI06-191691, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.38, 63.7, 4596.2
+75, GI06-191692R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.47, 81.9, 5174.4
+76, GI06-191693R, NGF's Additional New Data (J), 2001, v. 004  p. 0001, 2.62, 80.0, 5145.0
+77, GI03-191694R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 3.2, 69.6, 4615.8
+78, GI03-191695R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 3.13, 71.3, 4743.2
+79, GI03-191696, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 3.11, 72.6, 4949.0
+80, GI03-191697, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 3.03, 73.9, 4929.4
+81, GI03-191698R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.93, 74.4, 4978.4
+82, GI03-191699R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 3.05, 72.9, 4890.2
+83, GI03-191700R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.99, 74.3, 4988.2
+84, GI03-191701, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.59, 76.9, 5027.4
+85, GI03-191702R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.84, 76.1, 5105.8
+86, GI03-191703R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.91, 75.0, 5135.2
+87, GI03-191704R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.84, 76.0, 6771.8
+88, GI03-191705R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.77, 75.5, 6330.8
+89, GI03-191706, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.76, 76.8, 6291.6
+90, GI03-191707R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.69, 77.4, 6487.6
+91, GI03-191708R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.93, 77.7, 6164.2
+92, GI03-191709R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.57, 77.2, 6125.0
+93, GI03-191710R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.65, 76.2, 6487.6
+94, GI03-191711R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.74, 76.1, 6419.0
+95, GI03-191712, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.55, 76.7, 6291.6
+96, GI03-191713R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.83, 74.5, 6360.2
+97, GI03-191714, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.63, 76.1, 6448.4
+98, GI03-191715R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.7, 74.9, 6174.0
+99, GI03-191716, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.51, 76.6, 6056.4
+100, GI03-191717, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.6, 75.4, 6164.2
+101, GI03-191718, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.48, 75.4, 6144.6
+102, GI05-191719R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.44, 70.1, 6232.8
+103, GI05-191720R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.52, 74.3, 6330.8
+104, GI03-191721R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.99, 75.2, 6076.0
+105, GI07-191722R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.62, 66.4, 5213.6
+106, GI03-191723R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.76, 76.2, 6595.4
+107, GI06-191724R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.46, 72.2, 6066.2
+108, NI07-191727, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.66, 68.2, 5468.4
+109, GI03-191728R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.8, 77.9, 6360.2
+110, GI06-191729R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.5, 73.4, 5537.0
+111, GI03-191730, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.58, 77.3, 6409.2
+112, GI03-191731R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 3.07, 77.9, 6624.8
+113, GI07-191732R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.7, 69.1, 5497.8
+114, GI03-191733R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.83, 78.8, 6281.8
+115, GI03-191735R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.71, 84.9, 5272.4
+116, GI03-191737R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.67, 81.4, 5321.4
+117, GI03-191739R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.66, 84.4, 5311.6
+118, GI03-191740R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.64, 86.6, 5478.2
+119, GI03-191741R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.61, 91.9, 5439.0
+120, GI03-191742R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.59, 89.7, 5517.4
+121, GI03-191743, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.54, 91.7, 5693.8
+122, GI03-191746R, NGF's Additional New Data (J), 2001, v. 004  p. 0003, 2.54, 71.3, 4998.0
+123, GI03-191747R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.57, 75.9, 5154.8
+124, GI06-191748, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.46, 70.5, 5096.0
+125, GI02-191756R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.64, 78.5, 5194.0
+126, GI03-191757R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 3.23, 71.4, 4998.0
+127, GI07-191758, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.85, 74.6, 5125.4
+128, GI02-191759R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.53, 69.4, 4890.2
+129, GI02-191760R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.59, 73.0, 5194.0
+130, GI02-191761R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.89, 68.7, 4919.6
+131, GI02-191762R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.7, 69.7, 5037.2
+132, GI02-191764, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.56, 72.5, 5135.2
+133, GI02-191765R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.69, 70.7, 4958.8
+134, GI02-191766R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.6, 71.9, 4998.0
+135, GI02-191768R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.56, 70.5, 4949.0
+136, GI02-191769R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.44, 66.3, 4449.2
+137, GI05-191770R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.26, 59.6, 4635.4
+138, GI05-191771R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.33, 66.1, 4674.6
+139, GI05-191772R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.36, 72.1, 4949.0
+140, GI05-191773R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.34, 69.2, 4988.2
+141, GI05-191774R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.53, 79.1, 5194.0
+142, GI05-191775, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.62, 78.7, 5125.4
+143, GI05-191776R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.69, 74.7, 4831.4
+144, GI06-191777R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.58, 74.0, 4723.6
+145, GI06-191778R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.59, 72.6, 4733.4
+146, GI06-191779R, NGF's Additional New Data (J), 2001, v. 004  p. 0005, 2.48, 72.7, 5017.6
+147, GI03-191820R, NGF's Additional New Data (J), 2001, v. 004  p. 0007, 2.56, 77.8, 5047.0
+148, GI03-191821R, NGF's Additional New Data (J), 2001, v. 004  p. 0007, 2.56, 79.8, 5409.6
+149, GI02-191825R, NGF's Additional New Data (J), 2001, v. 004  p. 0007, 2.466, 73.8, 4615.8
+150, GI02-191826R, NGF's Additional New Data (J), 2001, v. 004  p. 0007, 2.52, 72.7, 4517.8
+151, GI03-191828R, NGF's Additional New Data (J), 2001, v. 004  p. 0007, 2.44, 82.6, 5135.2
+152, GI10-191850R, NGF's Additional New Data (J), 2001, v. 004  p. 0007, 5.0, 118.3, 6575.8
+153, GI10-191851R, NGF's Additional New Data (J), 2001, v. 004  p. 0007, 4.547, 122.0, 6624.8
+154, GI10-191855R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 4.52, 120.2, 6517.0
+155, GI10-191856R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 4.55, 118.8, 6585.6
+156, GI10-191858R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 4.57, 122.1, 6546.4
+157, GI10-191859R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 4.59, 122.5, 3469.2
+158, GI10-191860R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 4.51, 124.9, 6889.4
+159, GI02-191861, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.879, 71.1, 5037.2
+160, GI02-191862R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.9, 70.5, 4831.4
+161, GI02-191863, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.68, 69.9, 4586.4
+162, GI02-191864R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.704, 71.6, 4655.0
+163, GI02-191865R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.62, 71.5, 4655.0
+164, GI02-191866R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.65, 68.4, 4596.2
+165, GI02-191867R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.63, 67.9, 4449.2
+166, GI02-191868R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.68, 69.7, 4488.4
+167, GI02-191869R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.64, 70.3, 4694.2
+168, GI02-191870R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.55, 66.6, 4449.2
+169, GI20-191891R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 2.91, 60.7, 3430.0
+170, GI20-191892R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 3.08, 62.8, 3684.8
+171, GI20-191893R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 3.82, 54.9, 6458.2
+172, GI20-191894R, NGF's Additional New Data (J), 2001, v. 004  p. 0009, 3.49, 59.4, 3655.4
+173, GI03-191913, NGF's Additional New Data (J), 2001, v. 004  p. 0011, 2.666, 80.4, 5115.6
+174, GI03-191929R, NGF's Additional New Data (J), 2001, v. 004  p. 0011, 2.74, 78.7, 5017.6
+175, GI03-191930R, NGF's Additional New Data (J), 2001, v. 004  p. 0011, 2.747, 79.6, 4968.6
+176, GI03-191931R, NGF's Additional New Data (J), 2001, v. 004  p. 0011, 2.776, 80.5, 5076.4
+177, GI03-191932R, NGF's Additional New Data (J), 2001, v. 004  p. 0011, 2.763, 80.2, 5086.2
+178, GJ03-233858, J. Ceramic Soc. Japan, 1986, v. 094  p. 0550, 3.04, 91.0, 6174.0
+179, GJ38-264359, J. American Ceramic Soc., 2005, v. 088  p. 0875, 4.33, 130.0, 8690.0
+180, GJ38-264360, J. American Ceramic Soc., 2005, v. 088  p. 0875, 4.21, 134.0, 8900.0
+181, GJ38-264361, J. American Ceramic Soc., 2005, v. 088  p. 0875, 4.05, 143.0, 9630.0
+182, GJ38-264362, J. American Ceramic Soc., 2005, v. 088  p. 0875, 3.91, 149.0, 9700.0
+183, GJ38-264363, J. American Ceramic Soc., 2005, v. 088  p. 0875, 3.78, 156.0, 10220.0
+184, GJ38-264364, J. American Ceramic Soc., 2005, v. 088  p. 0875, 4.47, 129.0, 9380.0
+185, GJ38-264365, J. American Ceramic Soc., 2005, v. 088  p. 0875, 4.71, 138.0, 9820.0
+186, GJ38-264366, J. American Ceramic Soc., 2005, v. 088  p. 0875, 4.95, 145.0, 9950.0
+187, GJ38-264367, J. American Ceramic Soc., 2005, v. 088  p. 0875, 5.05, 147.0, 10500.0
+188, GJ38-264368, J. American Ceramic Soc., 2005, v. 088  p. 0875, 4.51, 136.0, 9500.0
+189, GJ38-264369, J. American Ceramic Soc., 2005, v. 088  p. 0875, 4.31, 135.0, 9530.0
+190, GJ38-264370, J. American Ceramic Soc., 2005, v. 088  p. 0875, 4.11, 137.0, 9530.0
+191, GJ38-264371, J. American Ceramic Soc., 2005, v. 088  p. 0875, 3.92, 145.0, 10130.0
+192, GJ81-283112, J. Non-Crystalline Solids, 2008, v. 354  p. 1080, 5.802, 40.9, 3480.0
+193, GJ81-283113, J. Non-Crystalline Solids, 2008, v. 354  p. 1080, 6.373, 45.9, 2580.0
+194, GJ81-283116, J. Non-Crystalline Solids, 2008, v. 354  p. 1080, 7.488, 59.53, 4420.0
+195, GJ81-283117, J. Non-Crystalline Solids, 2008, v. 354  p. 1080, 7.56, 61.36, 4700.0
+196, GJ81-283118, J. Non-Crystalline Solids, 2008, v. 354  p. 1080, 7.888, 66.64, 4140.0
+197, GJ81-283119, J. Non-Crystalline Solids, 2008, v. 354  p. 1080, 8.157, 70.72, 5450.0
+198, GJ40-303974, J. Non-Crystalline Solids, 2011, v. 357  p. 002984, 4.936, 30.5, 2523.5
+199, GJ40-303976, J. Non-Crystalline Solids, 2011, v. 357  p. 002984, 4.827, 29.5, 2254.0
+200, GJ40-303977, J. Non-Crystalline Solids, 2011, v. 357  p. 002984, 4.698, 28.5, 2185.4
+201, GP02-331317, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.5, 86.0, 5821.2
+202, GP03-331318, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.52, 86.5, 5899.6
+203, GP02-331319, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.52, 86.7, 5987.8
+204, GP03-331320, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.53, 87.8, 6027.0
+205, GP02-331321, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.56, 83.8, 6193.6
+206, GP03-331322, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.54, 83.3, 6027.0
+207, GP03-331323, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.54, 82.8, 6007.4
+208, GP03-331324, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.52, 82.4, 5772.2
+209, GP03-331325, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.53, 82.5, 5968.2
+210, GP03-331326, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.54, 85.2, 5948.6
+211, GP03-331327, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.53, 84.9, 5880.0
+212, GP03-331328, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.52, 83.2, 5880.0
+213, GP03-331329, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.53, 83.8, 5899.6
+214, GP03-331330, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.52, 82.6, 5880.0
+215, GP03-331331, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.52, 83.0, 5870.2
+216, GP03-331332, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.54, 85.7, 5840.8
+217, GP03-331333, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.55, 85.0, 5880.0
+218, GP02-331334, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.51, 83.0, 5899.6
+219, GP03-331335, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.5, 82.6, 5909.4
+220, GP03-331336, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.53, 82.5, 5987.8
+221, GP02-331337, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.54, 85.3, 5889.8
+222, GP03-331338, Japanese Patent    Konica Minolta (J), 2012, AW001914, 2.53, 82.0, 5889.8
+223, GJ03-344259, J. Non-Crystalline Solids, 2021, a. 120554, 2.752, 77.38, 4730.0
+224, XJ03-344260, J. Non-Crystalline Solids, 2021, a. 120554, 2.819, 100.45, 7390.0
+225, GJ03-344265, J. Non-Crystalline Solids, 2021, a. 120554, 2.747, 84.87, 5150.0
+226, XJ03-344266, J. Non-Crystalline Solids, 2021, a. 120554, 2.784, 102.2, 7810.0
+227, GP03-352276, US Patent    Konica Minolta (J), 2013, A0231236, 2.5, 86.0, 5860.4
+228, GP03-352277, US Patent    Konica Minolta (J), 2013, A0231236, 2.52, 87.9, 6076.0
+229, GP03-352278, US Patent    Konica Minolta (J), 2013, A0231236, 2.54, 83.3, 6027.0
+230, GP03-352279, US Patent    Konica Minolta (J), 2013, A0231236, 2.56, 84.9, 6017.2
+231, GP03-352280, US Patent    Konica Minolta (J), 2013, A0231236, 2.53, 84.9, 5880.0
+232, GP03-352281, US Patent    Konica Minolta (J), 2013, A0231236, 2.53, 83.8, 5899.6
+233, GP03-352282, US Patent    Konica Minolta (J), 2013, A0231236, 2.49, 82.1, 5860.4
+234, GP03-352283, US Patent    Konica Minolta (J), 2013, A0231236, 2.54, 87.3, 6085.8
+235, GP03-352284, US Patent    Konica Minolta (J), 2013, A0231236, 2.52, 83.3, 5805.52
+236, GP03-352285, US Patent    Konica Minolta (J), 2013, A0231236, 2.53, 82.0, 5889.8
+237, GJ03-355425, J. Materials Science, 2013, v. 048  p. 3461, 2.75, 102.0, 8000.0
+238, GJ03-355428, J. Materials Science, 2013, v. 048  p. 3461, 2.89, 102.0, 8400.0
+239, XJ03-355429, J. Materials Science, 2013, v. 048  p. 3461, 2.76, 96.0, 8200.0
+240, XJ03-355430, J. Materials Science, 2013, v. 048  p. 3461, 2.755, 95.0, 8300.0
+241, XJ03-355431, J. Materials Science, 2013, v. 048  p. 3461, 2.885, 112.0, 10100.0
+242, XJ03-355436, J. Materials Science, 2013, v. 048  p. 3461, 2.87, 97.0, 8700.0
+243, XJ03-355437, J. Materials Science, 2013, v. 048  p. 3461, 2.89, 97.0, 8800.0
+244, XJ03-355438, J. Materials Science, 2013, v. 048  p. 3461, 2.985, 102.0, 9900.0
+245, XJ03-355439, J. Materials Science, 2013, v. 048  p. 3461, 3.0, 110.0, 10500.0
+246, GJ10-358782, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.07, 41.3, 3530.0
+247, GJ05-358783, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.18, 41.6, 3580.0
+248, GJ05-358784, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.04, 32.1, 3150.0
+249, GJ05-358785, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.31, 57.1, 5350.0
+250, GJ05-358786, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.15, 44.4, 3750.0
+251, GJ05-358787, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.45, 78.8, 6200.0
+252, GJ05-358788, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.18, 50.6, 4250.0
+253, GJ05-358789, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.22, 61.9, 6470.0
+254, GJ05-358790, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.45, 78.4, 6620.0
+255, GJ05-358791, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.14, 56.7, 6420.0
+256, GJ05-358792, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.26, 63.5, 6330.0
+257, GJ03-358793, J. Non-Crystalline Solids, 2015, v. 417  p. 0015, 2.48, 70.7, 5360.0
+258, GJ20-359495, J. Non-Crystalline Solids, 2015, v. 430  p. 0079, 3.541, 38.63, 2750.0
+259, GJ20-359496, J. Non-Crystalline Solids, 2015, v. 430  p. 0079, 3.508, 39.24, 2780.0
+260, GJ20-359497, J. Non-Crystalline Solids, 2015, v. 430  p. 0079, 3.472, 39.86, 2800.0
+261, GJ20-359498, J. Non-Crystalline Solids, 2015, v. 430  p. 0079, 3.438, 40.41, 2880.0
+262, GJ20-359499, J. Non-Crystalline Solids, 2015, v. 430  p. 0079, 3.402, 41.03, 2900.0
+263, GJ20-359500, J. Non-Crystalline Solids, 2015, v. 430  p. 0079, 3.365, 41.51, 2920.0
+264, GJ60-359503, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.42, 66.2, 3750.0
+265, GJ60-359504, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.54, 68.9, 3830.0
+266, GJ60-359505, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.45, 70.3, 3890.0
+267, GJ60-359506, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.46, 69.7, 3950.0
+268, GJ60-359507, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.45, 70.6, 4010.0
+269, GJ60-359508, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.46, 73.1, 4060.0
+270, GJ60-359509, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.47, 72.3, 4100.0
+271, GJ60-359510, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.4, 74.3, 4270.0
+272, GJ60-359511, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.48, 75.4, 4350.0
+273, GJ60-359512, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.51, 77.5, 4580.0
+274, GJ60-359513, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.51, 78.5, 4770.0
+275, GJ60-359514, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.46, 77.2, 4700.0
+276, GJ60-359515, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.26, 61.1, 4170.0
+277, GJ60-359516, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.25, 59.7, 4070.0
+278, GJ20-359517, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.2, 54.5, 3790.0
+279, GJ20-359518, J. Non-Crystalline Solids, 2015, v. 430  p. 0099, 3.18, 51.8, 3610.0
+280, GP03-360444, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.68, 88.0, 5929.0
+281, GP03-360445, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.66, 83.0, 5635.0
+282, GP03-360446, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.7, 80.0, 6174.0
+283, GP03-360447, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.68, 89.0, 5684.0
+284, GP03-360448, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.69, 88.0, 5439.0
+285, GP03-360449, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.65, 80.0, 5733.0
+286, GP03-360450, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.68, 80.0, 5586.0
+287, GP03-360451, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.61, 83.0, 5978.0
+288, GP03-360452, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.64, 83.0, 6076.0
+289, GP03-360453, Japanese Patent    Hoya Corp. (J), 2015, A096465, 2.69, 82.0, 5880.0
+290, GJ02-368433, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.514, 73.8, 5640.0
+291, GJ02-368434, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.503, 72.6, 5370.0
+292, GJ02-368435, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.478, 71.9, 5020.0
+293, GJ02-368436, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.443, 68.8, 4840.0
+294, GJ02-368437, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.56, 74.6, 5670.0
+295, GJ02-368438, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.566, 75.7, 5780.0
+296, GJ02-368439, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.594, 76.8, 5880.0
+297, GJ02-368440, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.605, 78.0, 5980.0
+298, GJ02-368441, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.638, 80.1, 6100.0
+299, GJ02-368442, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.661, 81.3, 6350.0
+300, GJ02-368443, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.519, 73.8, 5590.0
+301, GJ02-368444, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.52, 73.4, 5590.0
+302, GJ02-368445, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.526, 73.6, 5600.0
+303, GJ02-368446, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.525, 73.5, 5570.0
+304, GJ02-368447, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.535, 73.6, 5510.0
+305, GJ02-368448, J. Non-Crystalline Solids, 2017, v. 471  p. 0006, 2.535, 73.5, 5480.0
+306, GJ28-369386, J. Non-Crystalline Solids, 2017, v. 470  p. 0112, 3.71, 41.672, 13190.0
+307, GJ28-369387, J. Non-Crystalline Solids, 2017, v. 470  p. 0112, 3.759, 43.114, 14160.0
+308, GJ28-369388, J. Non-Crystalline Solids, 2017, v. 470  p. 0112, 3.882, 44.352, 12150.0
+309, GJ28-369389, J. Non-Crystalline Solids, 2017, v. 470  p. 0112, 3.888, 47.343, 13190.0
+310, GJ28-369390, J. Non-Crystalline Solids, 2017, v. 470  p. 0112, 4.031, 48.154, 16350.0
+311, GJ28-369391, J. Non-Crystalline Solids, 2017, v. 470  p. 0112, 4.144, 49.781, 15140.0
+312, GJ03-373014, Bull. Materials Science, 2016, v. 039  p. 0365, 2.68, 90.47, 6750.0
+313, GJ03-373015, Bull. Materials Science, 2016, v. 039  p. 0365, 2.74, 92.16, 7300.0
+314, GJ03-373016, Bull. Materials Science, 2016, v. 039  p. 0365, 2.77, 97.24, 7800.0
+315, GJ03-373017, Bull. Materials Science, 2016, v. 039  p. 0365, 2.81, 101.95, 8900.0
+316, GJ03-373018, Bull. Materials Science, 2016, v. 039  p. 0365, 2.825, 104.38, 9950.0
+317, GJ03-378945, J. Non-Crystalline Solids, 2018, v. 492  p. 0094, 2.843, 89.0, 6380.0
+318, GJ03-378946, J. Non-Crystalline Solids, 2018, v. 492  p. 0094, 2.757, 86.0, 6130.0
+319, GJ02-378949, J. Non-Crystalline Solids, 2018, v. 492  p. 0094, 2.5023, 77.9, 5290.0
+320, GJ02-378950, J. Non-Crystalline Solids, 2018, v. 492  p. 0094, 2.613, 80.0, 6000.0
+321, GJ03-378951, J. Non-Crystalline Solids, 2018, v. 492  p. 0094, 2.596, 77.7, 6040.0
+322, GJ02-378952, J. Non-Crystalline Solids, 2018, v. 492  p. 0094, 2.565, 75.4, 5410.0
+323, GJ02-378953, J. Non-Crystalline Solids, 2018, v. 492  p. 0094, 2.661, 80.6, 5920.0
+324, GJ03-378954, J. Non-Crystalline Solids, 2018, v. 492  p. 0094, 2.683, 85.0, 5950.0
+325, GJ40-390413, J. Non-Crystalline Solids, 2019, v. 513  p. 0044, 3.84, 28.0, 1500.0
+326, GJ40-390414, J. Non-Crystalline Solids, 2019, v. 513  p. 0044, 3.84, 32.5, 1600.0
+327, GJ40-390415, J. Non-Crystalline Solids, 2019, v. 513  p. 0044, 3.87, 37.5, 1700.0
+328, GJ40-390416, J. Non-Crystalline Solids, 2019, v. 513  p. 0044, 3.9, 40.0, 2000.0
+329, GJ40-390417, J. Non-Crystalline Solids, 2019, v. 513  p. 0044, 3.96, 43.5, 2300.0
+330, GJ40-390418, J. Non-Crystalline Solids, 2019, v. 513  p. 0044, 3.97, 48.0, 2500.0
+331, GJ50-393506, J. Non-Crystalline Solids, 2019, a. 119543, 3.688, 16.55, 1550.0
+332, GJ50-393507, J. Non-Crystalline Solids, 2019, a. 119543, 3.737, 16.55, 1630.0
+333, GJ50-393508, J. Non-Crystalline Solids, 2019, a. 119543, 3.787, 16.55, 1690.0
+334, GJ50-393509, J. Non-Crystalline Solids, 2019, a. 119543, 3.836, 16.54, 1700.0
+335, GJ50-393510, J. Non-Crystalline Solids, 2019, a. 119543, 3.892, 16.55, 1710.0
+336, GJ02-397620, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.43, 56.0, 4400.0
+337, GJ02-397621, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.49, 73.0, 6400.0
+338, GJ02-397622, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.51, 73.0, 6600.0
+339, GJ05-397623, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.47, 75.0, 5800.0
+340, GJ10-397624, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.4, 69.0, 6200.0
+341, GJ10-397625, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.33, 62.0, 5500.0
+342, GJ10-397626, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.25, 53.0, 4700.0
+343, GJ02-397627, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.45, 67.0, 5600.0
+344, GJ02-397628, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.45, 69.0, 6500.0
+345, GJ05-397629, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.42, 64.0, 6100.0
+346, GJ10-397630, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.35, 56.0, 5400.0
+347, GJ10-397631, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.28, 50.0, 4500.0
+348, GJ10-397632, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.22, 44.0, 3800.0
+349, GJ02-397633, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.5, 72.0, 6600.0
+350, GJ06-397634, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.42, 62.0, 6000.0
+351, GJ05-397635, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.36, 51.0, 4900.0
+352, GJ10-397636, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.29, 46.0, 4000.0
+353, GJ10-397637, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.25, 44.0, 3500.0
+354, GJ10-397638, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.36, 55.0, 4900.0
+355, GJ10-397639, J. American Ceramic Soc., 2019, v. 102  p. 4520, 2.28, 47.0, 3700.0
+356, GP06-399059, Japanese Patent    AGC (J), 2017, AW204167, 2.48, 75.1, 5390.0
+357, GP06-399062, Japanese Patent    AGC (J), 2017, AW204167, 2.47, 75.7, 5390.0
+358, GP03-403340, Japanese Patent    Nippon Electric Glass (J), 2019, A182727, 3.228, 113.0, 7673.4
+359, GP03-403341, Japanese Patent    Nippon Electric Glass (J), 2019, A182727, 2.966, 114.0, 7908.6
+360, GP03-403342, Japanese Patent    Nippon Electric Glass (J), 2019, A182727, 3.019, 117.0, 7761.6
+361, GP03-403343, Japanese Patent    Nippon Electric Glass (J), 2019, A182727, 3.024, 113.0, 7595.0
+362, GP03-403344, Japanese Patent    Nippon Electric Glass (J), 2019, A182727, 3.072, 116.0, 7781.2
+363, GP03-403345, Japanese Patent    Nippon Electric Glass (J), 2019, A182727, 2.973, 113.0, 8006.6
