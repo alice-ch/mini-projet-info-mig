@@ -1,0 +1,85 @@
+import pandas as pd
+import numpy as np
+
+df = pd.read_csv("C:/Users/raphael.poux/YVD.csv", header = 27)
+
+
+print(df.head())
+print(df.columns)
+print(len(df))
+
+
+
+
+
+colomns = {}
+print(colomns)
+for i in df.columns:
+    if i[0] == " ":
+        colomns[i] = i[1:]
+    else:
+        colomns[i] = i  
+df = df.rename(columns = colomns)
+df['PbO']=pd.Series(0,range(len(df)))
+df['GeO2']=pd.Series(0,range(len(df)))
+        
+colonnes = ['SiO2', 'Na2O', 'B2O3', 'CaO', 'Al2O3', 'K2O', 'Li2O', 'MgO', 'PbO', 'BaO', 'TiO2', 'GeO2', 'ZnO']
+oxydes_gardes = colonnes[:]
+colonnes.append("Young's Modulus at RT ( GPa )")
+colonnes.append("Density at RT ( g/cm3 )")
+colonnes.append("Vickers Hardness 100g ( MPa )")
+
+
+df = df[colonnes]
+
+    
+df = df.replace(' *', np.nan)               # * -> NaN
+df = df.replace(' ', np.nan)                # ' ' -> NaN
+df = df.fillna(0)
+
+for i in df.columns:
+    df[i] = pd.to_numeric(df[i], errors='coerce') 
+    
+df = df.fillna(0)  
+df = df[df['SiO2'] > 0]
+
+print(len(df))
+
+df.drop_duplicates(keep='first', inplace=True)                         # Les duplicatas parfaits
+# 36 956 verres  
+
+
+print(len(df))  
+
+df.drop_duplicates(subset=oxydes_gardes, keep=False, inplace=True)       # Les compos identiques
+# 32 786 verres  
+
+
+print(oxydes_gardes)
+
+df_composants = df[oxydes_gardes]
+df['Sum'] = df_composants.sum(axis=1)
+df = df[(df['Sum'] > 97) & (df['Sum'] <= 100)]
+
+
+print(colonnes)
+print("i")
+
+df = df[colonnes]
+df.head()
+
+
+print("i")
+
+df = df[(df["Young's Modulus at RT ( GPa )"] > 50) & (df["Young's Modulus at RT ( GPa )"] <= 130)]
+print("i")
+df = df[(df['Density at RT ( g/cm3 )'] > 2.2) & (df['Density at RT ( g/cm3 )'] <= 3)]
+df = df[(df['Vickers Hardness 100g ( MPa )'] > 3000) & (df['Vickers Hardness 100g ( MPa )'] <= 7500)]
+
+df.to_csv('Y_50_130_D_2.2_3_V_3000_7500.csv', sep = ' ', index=False)
+
+
+
+
+
+
